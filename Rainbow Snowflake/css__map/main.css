@@ -1,0 +1,47 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.snow {
+  position: absolute;
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  top: -10px;
+  -webkit-animation: fall 8s linear forwards;
+  animation: fall 8s linear forwards;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes fall {
+  to {
+    top: 100vh;
+  }
+}
+
+@keyframes fall {
+  to {
+    top: 100vh;
+  }
+}
+
+body {
+  background-color: #2d2d2d;
+  overflow: hidden;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.pause {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

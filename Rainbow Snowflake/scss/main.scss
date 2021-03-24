@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.snow {
+  position: absolute;
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  top: -10px;
+  animation: fall 8s linear forwards;
+  animation-play-state: running;
+}
+
+@keyframes fall {
+  to {
+    top: 100vh;
+  }
+}
+
+body {
+  background-color: rgb(45, 45, 45);
+  overflow: hidden;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+
+  & .pause {
+    display: none;
+  }
+}
